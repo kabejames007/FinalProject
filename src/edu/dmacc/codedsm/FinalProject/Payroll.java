@@ -1,10 +1,12 @@
 package edu.dmacc.codedsm.FinalProject;
 
+import java.util.List;
+
 public class Payroll {
         private double grossPay;
         private double netPay;
         private final double taxRate = 1.2;
-        Employee employee;
+        List<Employee> employee;
 
     public double getGrossPay() {
         return grossPay;
@@ -26,11 +28,11 @@ public class Payroll {
         return taxRate;
     }
 
-    public Employee getEmployee() {
+    public List<Employee> getEmployee() {
         return employee;
     }
 
-    public void setEmployee(Employee employee) {
+    public void setEmployee(List<Employee> employee) {
         this.employee = employee;
     }
 

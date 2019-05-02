@@ -7,6 +7,13 @@ public class Employee {
         private double hourlyRate;
 
 
+    public Employee(Integer ID, String names, double hoursWorked, double hourlyRate) {
+        this.ID = ID;
+        this.names = names;
+        this.hoursWorked = hoursWorked;
+        this.hourlyRate = hourlyRate;
+    }
+
     public Integer getID() {
         return ID;
     }
